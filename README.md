@@ -4,19 +4,23 @@ Which can be viewed through Grafana dashboard.
 ## Installation
 Before running test,
 run following commands from command line (make sure you are in your project root directory ):
-### Ruby
+- Ruby
 ```sh
     $ rbenv install (this will install jruby version mentioned in your .ruby-version file)
     $ bundle install (this will install all necessary gems mentioned in your Gemfile)
 ```
-### Influx DB
+- Influx DB
 ```sh
     $ brew update
     $ brew install influxdb
 ```
-### Grafana 
+- Grafana 
 ```sh
     $ brew install grafana
+```
+- Install Jmeter in tools folder 
+```sh
+    $ brew install jmeter
 ```
 
 ## Execution
@@ -25,10 +29,6 @@ run following commands from command line (make sure you are in your project root
     $ influxd -config /usr/local/etc/influxdb.conf
     $ source setup.sh (this will export all necessary env and change your USER_NAME, 
       USER_PASSWORD, SITE_URL and jmeter influxdb configuaration.
-```
-- Install Jmeter in tools folder 
-```sh
-    $ brew install jmeter
 ```
 - To executae single tests in the scenario folder
 ```sh
