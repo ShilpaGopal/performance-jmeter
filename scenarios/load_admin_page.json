@@ -1,0 +1,9 @@
+{
+  "scenarios": {
+    "scenario": {
+      "name": "load_demo_page",
+      "method": "GET",
+      "url": "/demo"
+    }
+  }
+}
