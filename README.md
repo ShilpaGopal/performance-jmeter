@@ -18,7 +18,7 @@ run following commands from command line (make sure you are in your project root
 ```sh
     $ brew install grafana
 ```
-- Install Jmeter in tools folder 
+- Jmeter 
 ```sh
     $ brew install jmeter
 ```
