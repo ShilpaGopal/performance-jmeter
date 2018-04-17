@@ -1,9 +1,14 @@
 {
   "scenarios": {
-    "scenario": {
-      "name": "load_demo_page",
+    "scenario1": {
+      "name": "load_admin_page",
       "method": "GET",
-      "url": "/demo"
+      "url": "/admin"
+    },
+    "scenario2": {
+      "name": "load_booking_page",
+      "method": "GET",
+      "url": "admin/bookings"
     }
   }
 }

@@ -1,0 +1,9 @@
+{
+  "scenarios": {
+    "scenario1": {
+      "name": "load_settings_page",
+      "method": "GET",
+      "url": "/admin/settings"
+    }
+  }
+}
