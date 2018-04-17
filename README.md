@@ -23,9 +23,8 @@ run following commands from command line (make sure you are in your project root
 - Make sure Influxdb is up and listening to the port 8086 and host and port details are updated in script file
 ```sh
     $ influxd -config /usr/local/etc/influxdb.conf
-    $ source ./script/cupcake_setup.sh (this will export all necessary env and change your SYSTEM_USER_NAME, 
-    SYSTEM_USER_PASSWORD, SITE_URL and jmeter influxdb configuaration for cupcake site creation, 
-    for pasty and production use regression_setup.sh/sanity_setup.sh)
+    $ source setup.sh (this will export all necessary env and change your USER_NAME, 
+      USER_PASSWORD, SITE_URL and jmeter influxdb configuaration.
 ```
 - Install Jmeter in tools folder 
 ```sh
