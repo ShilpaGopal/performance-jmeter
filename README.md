@@ -6,6 +6,9 @@ Before running test,
 run following commands from command line (make sure you are in your project root directory ):
 - Ruby
 ```sh
+    $ brew update
+    $ brew install rbenv
+    $ brew install ruby-build
     $ rbenv install (this will install jruby version mentioned in your .ruby-version file)
     $ bundle install (this will install all necessary gems mentioned in your Gemfile)
 ```
