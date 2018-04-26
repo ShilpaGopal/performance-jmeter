@@ -40,7 +40,7 @@ run following commands from command line (make sure you are in your project root
 ```sh
     $ rake performance:test_all
 ```
-## Steaming in Grafana
+## Streaming in Grafana
 - Run the grafana server locally
 ```sh
     $ brew services start grafana (visit localhost:3000 to view the dashboard)
