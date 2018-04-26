@@ -14,7 +14,6 @@ run following commands from command line (make sure you are in your project root
 ```
 - Influx DB
 ```sh
-    $ brew update
     $ brew install influxdb
 ```
 - Grafana 
