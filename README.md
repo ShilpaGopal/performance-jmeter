@@ -1,6 +1,8 @@
 This repo executes the performance tests using jmeter in non gui mode pushes data to Influx DB.
 Which can be viewed through Grafana dashboard.
 
+![Alt text](/performance-setup.png?raw=true "Optional Title")
+
 ## Installation
 Before running test,
 run following commands from command line (make sure you are in your project root directory ):
