@@ -36,7 +36,7 @@ run following commands from command line (make sure you are in your project root
 ```
 - To executae single tests in the scenario folder
 ```sh
-    $ rake performance:test[load_admin_page.json.]
+    $ rake performance:test[load_admin_page.json]
 ```
 - To execute all the tests in folder
 ```sh
