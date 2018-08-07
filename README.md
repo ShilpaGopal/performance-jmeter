@@ -1,4 +1,4 @@
-Capture the response time of an app using jmeter in non gui mode, push the captured response time data to time series database Influx DB. Query the influx dbthrough Grafana dashboard to view the results in time series chart. 
+Capture the response time of a page using jmeter in non gui mode, push the captured response time data to time series database Influx DB. Query the influx dbthrough Grafana dashboard to view the results in time series chart. 
 
 Three easy ways to capture the response time of a page
 
