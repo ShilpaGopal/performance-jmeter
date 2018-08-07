@@ -92,5 +92,5 @@ run following commands from command line (make sure you are in your project root
 ## Streaming in Grafana
 - Run the grafana server locally
 ```sh
-    $ brew services start grafana (visit localhost:3000 to view the dashboard)
+    $ brew services start grafana (visit localhost:3000 to view the dashboard end point. Configure the influx DB data soruce, query the DB and create the time series charts to visualize response time over the period).
 ```
