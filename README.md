@@ -1,8 +1,8 @@
 Capture the response time of an app using jmeter in non gui mode, push the captured response time data to time series database Influx DB. Query the influx dbthrough Grafana dashboard to view the results in time series chart. 
 
-![Alt text](/performance-setup.png?raw=true "Optional Title")
+Three easy ways to capture the response time of a page
 
-Setup the application url, jmeter and influx DB configurations in setup.js
+1. Setup the application url, jmeter and influx DB configurations in setup.sh
 ```sh
     # Site Configurations
 
@@ -24,7 +24,7 @@ Setup the application url, jmeter and influx DB configurations in setup.js
     export DB_PORT=8086
     export TEST_ENV=phptravels
 ```
-Add the url path to hit in .json file as 
+2. Add the url path to capture the response time to load the page in .json file as 
 
 ```sh
     {
@@ -42,10 +42,13 @@ Add the url path to hit in .json file as
       }
     }
 ```
-Execute the script as 
+3. Execute the script as 
 ```sh
     $ rake performance:test[file_name.json]
 ```
+
+![Alt text](/performance-setup.png?raw=true "Optional Title")
+
 
 ## Installation
 Before running test,
