@@ -1,7 +1,51 @@
-This repo executes the performance tests using jmeter in non gui mode pushes data to Influx DB.
-Which can be viewed through Grafana dashboard.
+Capture the response time of an app using jmeter in non gui mode, push the captured response time data to time series database Influx DB. Query the influx dbthrough Grafana dashboard to view the results in time series chart. 
 
 ![Alt text](/performance-setup.png?raw=true "Optional Title")
+
+Setup the application url, jmeter and influx DB configurations in setup.js
+```sh
+    # Site Configurations
+
+    export SITE_USERNAME=admin@phptravels.com
+    export SITE_PASSWORD=demoadmin
+    export SITE_URL=https://www.phptravels.net
+    
+    # Jmeter Configurations
+
+    export THROUGHPUT_PER_MINUTE=10
+    export THREAD_COUNT=1
+    export USERS_RAMPUP_TIME=10
+    export LOOP_COUNT=2
+    
+    # Influx DB Configurations
+
+    export DATABASE_NAME=performance_jmeter
+    export DB_HOST=127.0.0.1
+    export DB_PORT=8086
+    export TEST_ENV=phptravels
+```
+Add the url path to hit in .json file as 
+
+```sh
+    {
+      "scenarios": {
+        "scenario1": {
+          "name": "load_admin_page",
+          "method": "GET",
+          "url": "/admin"
+        },
+        "scenario2": {
+          "name": "load_booking_page",
+          "method": "GET",
+          "url": "admin/bookings"
+        }
+      }
+    }
+```
+Execute the script as 
+```sh
+    $ rake performance:test[file_name.json]
+```
 
 ## Installation
 Before running test,
